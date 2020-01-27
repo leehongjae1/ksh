@@ -1,0 +1,12 @@
+failFast: true
+build:
+  maxIssues: 10
+comments:
+  active: false
+style:
+  WildcardImport :
+    active: false
+  NoTabs :
+    active: false
+  OptionalUnit :
+    active: false

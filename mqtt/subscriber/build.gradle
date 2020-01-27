@@ -1,0 +1,16 @@
+mainClassName = 'com.choistec.cmspc.mqtt.subscriber.InitKt'
+version = '1.0'
+
+shadowJar {
+    archiveName = "CmsPcSubscriber.jar"
+    destinationDir = file("archive")
+}
+
+dependencies{
+    implementation project(':core:mysql')
+    implementation 'commons-daemon:commons-daemon:1.1.0',
+            "org.apache.tomcat:tomcat-jdbc:7.0.19",
+            'org.mybatis:mybatis:3.4.4',
+            'mysql:mysql-connector-java:5.1.43',
+            'org.apache.tomcat:juli:6.0.26'
+}

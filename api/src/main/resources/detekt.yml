@@ -1,0 +1,14 @@
+complexity:
+  LongParameterList:
+    active: false
+naming:
+  FunctionParameterNaming:
+    parameterPattern: '[a-z][A-Za-z0-9_]*'
+potential-bugs:
+  LateinitUsage:
+    active: false
+style:
+  WildcardImport :
+    active: false
+  MagicNumber :
+    active: false

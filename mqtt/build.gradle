@@ -1,0 +1,32 @@
+buildscript {
+	repositories {
+		jcenter()
+		google()
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+	}
+}
+
+dependencies {
+	implementation project(':core')
+}
+
+subprojects {
+	apply plugin: 'application'
+	apply plugin: 'com.github.johnrengelman.shadow'
+
+	repositories {
+		mavenCentral()
+	}
+
+	jar {
+		finalizedBy shadowJar
+	}
+	dependencies {
+		implementation project(':core')
+		implementation project(':mqtt')
+		implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.1'
+	}
+}

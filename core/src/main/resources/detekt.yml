@@ -1,0 +1,6 @@
+naming:
+  ConstructorParameterNaming:
+    parameterPattern: '[a-z][A-Za-z0-9_]*'
+style:
+  MagicNumber :
+    active: false

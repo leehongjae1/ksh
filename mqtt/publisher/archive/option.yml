@@ -1,0 +1,10 @@
+# Size of the universe
+MQTT:
+  LogLevel: 0
+  Domain: localhost
+  Port: 1883
+  SSL: false
+  UserName: root
+  Password: 1234
+  LoopInterval: 3000
+  LoopCount: 30000

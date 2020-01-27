@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: test
+---
+spring:
+  profiles: test
+name: test-YAML
+environment: test
+database:
+  host: localhost
+  port: 3306
+  user: choistec
+  password: chois2016!
+server:
+  port: 8080
+---
+spring:
+  profiles: prod
+name: prod-YAML
+environment: production
+database:
+  host: localhost
+  port: 3306
+  user: choistec
+  password: chois2016!
+server:
+  port: 8080

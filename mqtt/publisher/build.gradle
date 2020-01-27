@@ -1,0 +1,12 @@
+mainClassName = 'com.choistec.cmspc.mqtt.publisher.InitKt'
+version = '1.0'
+
+shadowJar {
+    archiveName = "CmsPcPublisher.jar"
+    destinationDir = file("archive")
+}
+
+dependencies{
+    implementation 'commons-daemon:commons-daemon:1.1.0',
+            'org.yaml:snakeyaml:1.19'
+}

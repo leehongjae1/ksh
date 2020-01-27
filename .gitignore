@@ -1,0 +1,33 @@
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+*.jar
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+\.idea/
+
+local\.properties
+
+*.iml
+
+
+*/out/
+
+*.log
+
+*.txt
+
+*.exe
+
+core/mysql/out/
+
+mqtt/publisher/out/
+
+mqtt/subscriber/out/
+
+*.tar
